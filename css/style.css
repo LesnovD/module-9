@@ -1,0 +1,361 @@
+/* montserrat-regular - latin */
+@font-face {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ 
+ /* montserrat-700 - latin */
+ @font-face {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ /* roboto-300 - latin */
+@font-face {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 300;
+   src: local('Roboto Light'), local('Roboto-Light'),
+        url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+
+ /* roboto-regular - latin */
+@font-face {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Roboto'), local('Roboto-Regular'),
+        url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ 
+
+
+ html{
+    box-sizing: border-box;
+ }
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+ }
+
+ ul,ol{
+    list-style: none;
+ }
+ img{
+    display: block;
+   max-width: 100%;
+   height: auto;
+ }
+ a{
+    text-decoration: none;
+ }
+ .page-header{
+    padding-top: 20px;
+    padding-bottom: 138px;
+    background-color: rgb(26, 25, 21);
+    background-image: url("../img/header-foto-mobile.png");
+    background-size: cover;
+
+ }
+ 
+ .autorization-list{
+    display: flex;
+    justify-content: center;
+   }
+   .btn-nav{
+      border-style: none;
+      background-color: rgba(26, 25, 21, 0);
+      width: 94px;
+      height: 40px;
+      font-size: 14px;
+      font-family: "Montserrat";
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: center;
+   }
+   .btn-nav:hover{
+      border-style: solid;
+      border-radius: 15px;
+      border-width: 2px;
+      border-color: rgb(255, 255, 255);
+   }
+
+   .logo{
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      font-size: 20px;
+      font-family: "Montserrat";
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.2;
+   }
+   
+
+   .header-top_row{
+      margin-bottom: 30px; 
+   }
+   .header-content-wraper{
+      text-align: center;
+   }
+   .header-titel{
+      font-size: 30px;
+      font-family: "Montserrat";
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .header-titel-span{
+       display: block;
+    }
+    .header-text {
+      font-size: 18px;
+      font-family: "Roboto";
+      color: rgb(255, 255, 255);
+      line-height: 1.2;
+
+    }
+    
+    .header-btn{
+       display: block;
+       margin: 0 auto;
+       border: none;
+       border-radius: 20px;
+       background-color: rgb(255, 78, 80);
+       width: 280px;
+       height: 40px;
+       font-size: 14px;
+       font-family: "Montserrat";
+       color: rgb(255, 255, 255);
+       font-weight: bold;
+       line-height: 1.2;
+
+    }
+    /*Partner section*/
+    .partner{
+       padding-top: 72px;
+       padding-bottom: 58px;
+    }
+    .partner-top_row{
+      margin-bottom: 20px;
+    }
+    .partner-titel{
+      font-size: 22px;
+      font-family: "Montserrat";
+      color: rgb(51, 51, 51);
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: center;
+   }
+    .partner-img{
+       border-radius: 50%;
+       margin-bottom: 22px;
+    }
+    .image-wraper{
+       position: relative;
+       width: fit-content;
+       margin: 0 auto;
+    }
+    .image-wraper::after{
+      content:"";
+      display: block;
+      border-style: solid;
+      border-width: 4px;
+      border-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      width: 37px;
+      height: 37px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: -10px; 
+      right: -10px;
+    }
+    .picture1::after {
+      background-color: rgb(255, 78, 80);
+      background-image: url("../img/icons/png1.png");
+    }
+
+    .picture2::after{
+      background-color: rgb(255, 165, 7);
+      background-image: url("../img/icons/png2.png");
+    }
+
+    .picture3::after{
+      background-color: rgb(28, 215, 173);
+      background-image: url("../img/icons/png3.png");
+    }
+
+    .picture4::after{
+      background-color: rgb(78, 115, 219);
+      background-image: url("../img/icons/png4.png");
+    }
+
+    .partner-list_item-titel {
+      font-size: 14px;
+      font-family: "Montserrat";
+      color: rgb(51, 51, 51);
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .partner-list-item_text{
+      font-size: 14px;
+      font-family: "Roboto";
+      color: rgb(102, 102, 102);
+      line-height: 1.2;
+      text-align: center;
+    }
+     .middle_row{
+      margin-bottom: 30px;
+
+    }
+    
+    .partner-btn {
+       display: block;
+       margin: 0 auto;
+      border-style: solid;
+      border-width: 2px;
+      border-color: rgb(255, 78, 80);
+      border-radius: 20px;
+      background-color: rgb(255, 255, 255);
+      width: 284px;
+      height: 44px;
+      font-size: 14px;
+      font-family: "Montserrat";
+      color: rgb(255, 78, 80);
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: center;
+    }
+    @media (max-width: 767px){
+     .logo{
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+     }
+     .autorization-column{
+      margin-bottom: 100px;
+    }
+    .partner-titel-span{
+       display: block;
+    }
+    .mobile-span{
+      display: block;
+      margin-bottom: 20px;
+   }
+
+    }
+
+    @media (min-width: 768px){
+
+       .page-header{
+         padding-top: 40px;
+         padding-bottom: 236px;
+         background-image: url("../img/header-foto-tablet.png");
+         background-size: cover;
+      }
+      .autorization-column{
+       display: flex;
+       justify-content: flex-end;
+       align-content: center;
+       margin-bottom: 150px;
+      }
+      .autorization-list{
+         margin: 0;
+         padding-right: 40px;
+      }
+      .logo{
+         margin: 0;
+         
+      }
+      .header-content-wraper{
+         width: fit-content;
+         margin: 0 auto;
+      }
+
+      .header-titel {
+         font-size: 52px;
+         margin-bottom: 40px;
+       }
+      .header-titel-span{
+          display: block;
+       }
+     
+      .header-text {
+         font-size: 24px;
+         margin-bottom: 30px;
+       }
+
+        /*Partner section*/
+        .partner{
+           padding-bottom: 40px;
+        }
+        .partner-top_row {
+           margin-bottom: 34px;
+         }
+
+       .partner-list{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+         }
+         
+         .partner-middle_row{
+            margin-bottom: 34px;
+       }
+
+       .partner-list-item_text{
+          width: 222px;
+          text-align: center;
+       }
+       .position-tablet3{
+          order: 1;
+       }
+       .position-tablet4{
+          order: 2;
+       }
+       .partner-btn{
+         width: 197px;
+
+       }
+
+    }
+
+    @media (min-width: 962px){
+
+       .page-header{
+          background-image: url("../img/header-foto-desktop.png");
+       }
+       .header-top_row{
+          margin-bottom: 154px;
+       }
+       .header-text{
+          margin-bottom: 34px;
+       }
+       /*Partner section*/
+
+       .partner{
+         padding-bottom: 76px;
+          }
+          
+    }
+    
+    
